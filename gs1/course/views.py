@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 
 def learn_django(request):
-    return render(request, 'courses.html')
+    return render(request, 'courses/courses.html')
 
 def learn_python(request):
     return HttpResponse('<h1>hello python</h1>')
