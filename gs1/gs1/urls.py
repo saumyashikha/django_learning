@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('learndj/',cv.learn_django),
     path('feedj/',fv.fee_django),
+    path('', fv.home_page)
 ]
