@@ -13,7 +13,7 @@ def learn_python(request):
 
 def learn_var(request):
     a = '<h1>Hello varible</h1>'
-    return HttpResponse('a')
+    return HttpResponse(a)
 
 def learn_format(request):
     a = 's'

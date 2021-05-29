@@ -5,5 +5,8 @@ from django.http import HttpResponse
 def fee_django(request):
     return HttpResponse('300')
 
+def fee_python(request):
+    return HttpResponse('400')
+    
 def home_page(request):
     return HttpResponse('Home Page')
