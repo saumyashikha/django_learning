@@ -4,7 +4,11 @@ from django.http import HttpResponse
 
 
 def learn_django(request):
-    return render(request, 'courses/courses.html')
+    cname = 'Django'
+    duration = '30 months'
+    seats = 10
+    django_details = {'nm':cname, 'du':duration, 's':seats}
+    return render(request, 'courses/courses.html', django_details)
 
 def learn_python(request):
     return HttpResponse('<h1>hello python</h1>')
