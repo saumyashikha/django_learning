@@ -1,17 +1,16 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body{
-            background-color: blue;
-        }
-    </style>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>python</title>
 </head>
 <body>
     <h1>Learn {{nm}} duration : {{du}} seats : {{s}}</h1>
+    <img src="{% static 'images/ur.jpg' %}" alt="its me">
+    <!-- <img src="{% static prefix %}images/27898.jpg" alt="its"> -->
 </body>
 </html>
