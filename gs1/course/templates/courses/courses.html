@@ -6,11 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'course/css/style.css' %}">
+    
+    
     <title>python</title>
 </head>
 <body>
     <h1>Learn {{nm}} duration : {{du}} seats : {{s}}</h1>
+    <img src="{% static 'course/images/ur.jpg' %}" alt="its me">
     <img src="{% static 'images/ur.jpg' %}" alt="its me">
-    <!-- <img src="{% static prefix %}images/27898.jpg" alt="its"> -->
+    <form action="">
+        <input type="button" value="clickme" onclick="disp()">
+    </form>
+    <script src="{% static 'course/js/all.js' %}"></script>
+    <script src="{% static 'js/all.js' %}"></script>
 </body>
 </html>
