@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block corecss %}
+    <link rel="stylesheet" href="{% static 'core/css/core.css'%}">
+    {% endblock corecss %}
+    <link rel="stylesheet" href="">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <nav>
+       <ul>
+           <li><a href="/">HOME</a></li>
+           <li><a href="{% url 'about' %}">ABOUT</a></li>
+           <li><a href="{% url 'django' %}">django</a></li>
+       </ul>
+    </nav>
+    {% block content %}{% endblock content%}
+</body>
+</html>
